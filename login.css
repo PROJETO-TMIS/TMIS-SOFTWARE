@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LADO AZUL */
+.left-panel {
+  flex: 1;
+  background-image: linear-gradient(#0078d4, #2eb7ec);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.left-panel h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.left-panel p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn-outline {
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #0781d8;
+}
+
+/* LADO DO LOGIN */
+.right-panel {
+  flex: 1;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  overflow-y: auto;
+ }
+
+.right-panel h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #0781d8;
+}
+
+.right-panel p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.right-panel form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel input {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.right-panel button {
+  padding: 12px;
+  margin-top: 12px;
+  background-color: #0781d8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.right-panel button:hover {
+  background-color: #0569ad;
+}
+.logo {
+  width: 250px;   /* ajuste o tamanho */
+  height: auto;
+  margin-bottom: 20px;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+ }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .left-panel h1 {
+    font-size: 24px;
+  }
+
+  .left-panel p {
+    font-size: 14px;
+  }
+
+  .btn-outline {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .right-panel h2 {
+    font-size: 22px;
+  }
+
+  .right-panel p {
+    font-size: 13px;
+  }
+
+  .right-panel form {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+ }
+ 

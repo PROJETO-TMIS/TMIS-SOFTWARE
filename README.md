@@ -1,2 +1,2 @@
 # TMIS-SOFTWARE
-Um software Jurídico feito do zero
+Um software Jurídico feito do zero.
